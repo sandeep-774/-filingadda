@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Services | FilingAdda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0066cc, #004d99);
+            color: white;
+            padding-top: 120px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: #0066cc;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #ff6600;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            background: #0066cc;
+            color: white;
+            font-size: 2rem;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: #0066cc;
+            margin-top: 0;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #449af5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header id="main-header">
+        <div class="container">
+            <div class="header-container">
+                <a href="../index.html" class="logo">
+                    <span class="logo-text">Filing<span>Adda</span></span>
+                </a>
+                
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#services" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../incomeTax/income-tax.html">Income Tax</a></li>
+                                <li><a href="../gst/gst.html">GST</a></li>
+                                <li><a href="corporate.html">Corporate Services</a></li>
+                                <li><a href="../otherService/other-service.html">Other Services</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../index.html#team">Team</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                        <li><a href="#" class="btn">Free Consultation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" data-aos="fade-in">
+        <div class="container">
+            <h1 data-aos="fade-up">Corporate Services</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Comprehensive solutions for all your business incorporation and compliance needs</p>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Corporate Services</h2>
+                <p data-aos="fade-up" data-aos-delay="100">End-to-end solutions for company formation and ongoing compliance</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Company Registration -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Company Registration</h3>
+                        <p>Complete Private Limited, Public Limited, and One Person Company registration including DSC, DIN, name approval, and MOA/AOA drafting.</p>
+                        <a href="#" class="btn">Register Company</a>
+                    </div>
+                </div>
+                
+                <!-- ROC Filing -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Company ROC Filing</h3>
+                        <p>Timely filing of all mandatory ROC forms including DIR-3 KYC, AOC-4, MGT-7, and other event-based filings with the Registrar of Companies.</p>
+                        <a href="#" class="btn">File ROC Forms</a>
+                    </div>
+                </div>
+                
+                <!-- Company Annual Filing -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Company Annual Filing</h3>
+                        <p>Comprehensive annual compliance package including financial statements preparation, board reports, and AGM management.</p>
+                        <a href="#" class="btn">Annual Compliance</a>
+                    </div>
+                </div>
+                
+                <!-- LLP Registration -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>LLP Registration</h3>
+                        <p>End-to-end Limited Liability Partnership registration including name reservation, DIN, DPIN, and LLP agreement drafting.</p>
+                        <a href="#" class="btn">Register LLP</a>
+                    </div>
+                </div>
+                
+                <!-- LLP Annual Filing -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>LLP Annual Filing</h3>
+                        <p>Complete LLP compliance including Form 8 (Statement of Account) and Form 11 (Annual Return) filing with ROC.</p>
+                        <a href="#" class="btn">LLP Compliance</a>
+                    </div>
+                </div>
+                
+                <!-- Firm Registration -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Firm Registration</h3>
+                        <p>Partnership firm registration including deed drafting, notarization, and shop & establishment registration as required.</p>
+                        <a href="#" class="btn">Register Firm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer data-aos="fade-up">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="100">
+                    <h3>About Filing Adda</h3>
+                    <p>We are a leading chartered accountancy firm providing comprehensive financial services with integrity and professionalism since 2002.</p>
+                    <div class="contact-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="../incomeTax/income-tax.html">Income Tax</a></li>
+                        <li><a href="../gst/gst.html">GST Services</a></li>
+                        <li><a href="corporate.html">Corporate Services</a></li>
+                        <li><a href="#">Accounting Services</a></li>
+                        <li><a href="#">Financial Consulting</a></li>
+                        <li><a href="#">Compliance Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for financial tips and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email">
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Filing Adda. All Rights Reserved. | Designed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by Filing Adda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('main-nav').classList.toggle('active');
+        });
+        
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
