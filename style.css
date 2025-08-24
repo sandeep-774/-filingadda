@@ -186,7 +186,7 @@
         box-shadow: none;
         opacity: 1;
         visibility: visible;
-        max-height: 0;
+/*         max-height: 0; */
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
@@ -1136,4 +1136,5 @@
             .footer-content {
                 grid-template-columns: 1fr;
             }
+
         }
